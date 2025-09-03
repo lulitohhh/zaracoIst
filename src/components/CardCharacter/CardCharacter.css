@@ -30,7 +30,7 @@
 
 /* Título del personaje */
 .character-title {
-  font-size: 1.8rem; /* Más pequeño */
+  font-size: 1.8rem;
   margin-bottom: 8px;
   font-weight: bold;
 }
@@ -38,7 +38,7 @@
 /* Imagen del personaje */
 .character-img {
   width: 100%;
-  max-width: 180px; /* Más pequeña */
+  max-width: 180px;
   border-radius: 10px;
   margin: 0 auto 10px;
   display: block;
@@ -47,36 +47,50 @@
 /* Contenedor de estadísticas */
 .stat-container {
   margin: 8px 0;
-  font-size: 1.2rem; /* Más compacto */
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 10px; /* Más espacio vertical */
 }
 
-/* Grupo de botones de estadísticas */
+/* 🔹 Botones + número - alineados horizontalmente */
 .button-group {
-  margin-top: 6px;
   display: flex;
-  gap: 6px;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 14px; /* Espacio entre botones y número */
+  margin-top: 6px;
 }
 
-/* Botones de estadísticas */
+/* Número centrado */
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: center;
+  color: #5a3320;
+}
+
+/* Botones redondos */
 .stat-btn {
   background: #805c48;
   border: none;
   color: white;
-  font-size: 1.2rem;
-  padding: 8px 8px;
-  border-radius: 12px;
+  font-size: 1.4rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%; /* Botón completamente redondo */
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .stat-btn:hover {
   background: #442706;
+  transform: scale(1.1);
 }
 
 /* Habilidades */
@@ -93,29 +107,35 @@
   .character-card {
     padding: 10px;
     width: 90%;
-    height: clamp(400px, 85vh, 500px); /* Más compacto en celulares */
+    height: clamp(400px, 85vh, 500px);
   }
 
   .character-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .character-img {
-    max-width: 150px; /* Imagen más pequeña en móvil */
+    max-width: 150px;
   }
 
   .stat-container {
     font-size: 1rem;
-    gap: 4px;
+    gap: 8px;
   }
 
   .stat-btn {
-    font-size: 2rem;
-    padding: 1px 6px;
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
+    min-width: 36px;
   }
 
   .ability {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 6px;
   }
 }
