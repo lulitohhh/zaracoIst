@@ -4,7 +4,7 @@
   border-radius: 8px;
   padding: 12px;
   width: clamp(260px, 80%, 300px); /* Tamaño adaptable */
-  height: clamp(490px, 90vh, 550px); /* Misma proporción que la carta de leyenda */
+  height: clamp(600px, 90vh, 550px); /* Misma proporción que la carta de leyenda */
   margin: 12px auto;
   box-shadow: 0 4px 12px rgba(240, 235, 235, 0.2);
   text-align: center;
