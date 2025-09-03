@@ -1,0 +1,76 @@
+.leyenda-card {
+  background: url('../../images/Legend.png') no-repeat center center;
+  background-size: 100% 100%; 
+  border-radius: 5px;
+  padding: 16px;
+  width: 340px;      /* Tamaño fijo */
+  height: 750px;     /* Tamaño fijo */
+  margin: 16px auto;
+  box-shadow: 0 4px 12px rgba(240, 235, 235, 0.2);
+ 
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(240, 235, 221);     
+}
+
+.Leyenda-card-margin {
+  width: 100%;
+  height: calc(100% - 32px); /* resta el padding del padre si es 16px arriba y abajo */
+  border-radius: 5px;
+  padding: 16px;
+  text-align: center;
+  overflow-y: auto;
+  box-sizing: border-box;
+   -webkit-overflow-scrolling: touch;
+}
+
+.leyenda-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #e7b750;
+}
+
+.leyenda-img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.leyenda-section {
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+.leyenda-subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 6px;
+  color: #cfac41;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .leyenda-card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .leyenda-title {
+    font-size: 2rem;
+  }
+
+  .leyenda-img {
+    max-width: 220px;
+  }
+
+  .leyenda-section {
+    font-size: 1.2rem;
+  }
+
+  .leyenda-subtitle {
+    font-size: 1rem;
+  }
+}

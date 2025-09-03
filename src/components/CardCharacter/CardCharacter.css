@@ -1,0 +1,105 @@
+.character-card {
+ background: url('/public/images/Character.png') no-repeat center center;
+  background-size: 100% 100%; 
+  border-radius: 5px;
+  padding: 16px;
+  width: 340px;      
+  height: 750px;     
+  margin: 16px auto;
+  box-shadow: 0 4px 12px rgba(240, 235, 235, 0.2);
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(90, 51, 32);   
+}
+
+.character-card-margin {
+  width: 100%;
+  height: calc(100% - 32px); 
+  border-radius: 5px;
+  padding: 16px;
+  text-align: center;
+  overflow-y: auto;
+  box-sizing: border-box;
+   -webkit-overflow-scrolling: touch;
+}
+
+.character-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+  word-wrap: break-word;
+}
+
+.character-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.stat-container {
+  margin: 10px 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.stat-btn {
+  background: #805c48;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 20px 30px;
+  margin: 20px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.stat-btn:hover {
+  background: #442706;
+}
+
+.ability {
+  text-align: center;
+  margin-top: 14px;
+  padding: 12px;
+  font-size: 2rem;
+}
+
+/* 📱 Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+  .character-card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .character-title {
+    font-size: 2rem;
+  }
+
+  .character-img {
+    max-width: 220px;
+  }
+
+  .stat-container {
+    font-size: 1.5rem;
+  }
+
+  .stat-btn {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+  }
+
+  .ability {
+    font-size: 1.3rem;
+  }
+}

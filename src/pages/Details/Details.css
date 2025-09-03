@@ -1,0 +1,34 @@
+.details-container {
+  background: linear-gradient(135deg, #ece8e8, #fdfbfb);
+  color: #f7eddd;
+}
+.btn {
+  background: #202020;              
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;              
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+ .btn:hover {
+  background: #2f89c5;            
+  transform: translateY(-2px);      
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+ .btn:active {
+  transform: translateY(1px);       
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
