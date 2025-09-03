@@ -14,7 +14,7 @@
 
 .Leyenda-card-margin {
   width: 100%;
-  height: calc(100% - 32px); /* resta el padding del padre si es 16px arriba y abajo */
+  height: calc(100% - 32px); 
   border-radius: 5px;
   padding: 16px;
   text-align: center;
