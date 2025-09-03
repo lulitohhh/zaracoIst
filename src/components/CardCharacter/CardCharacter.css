@@ -4,7 +4,7 @@
   border-radius: 8px;
   padding: 12px;
   width: clamp(260px, 80%, 300px); /* Tamaño flexible */
-  height: clamp(450px, 90vh, 550px); /* Más compacta, adaptable a pantalla */
+  height: clamp(490px, 90vh, 550px); /* Más compacta, adaptable a pantalla */
   margin: 12px auto;
   box-shadow: 0 4px 12px rgba(240, 235, 235, 0.2);
 
