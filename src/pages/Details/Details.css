@@ -3,32 +3,61 @@
   color: #f7eddd;
 }
 .btn {
-  background: #202020;              
+  background: #202020;
   color: white;
   font-weight: bold;
-  padding: 15px 20px;
+
+  /* Botón adaptativo */
+  width: 90%;            /* Ocupar casi todo el ancho del contenedor */
+  max-width: 280px;       /* No más grande que esto */
+  min-width: 200px;       /* No más pequeño que esto */
+  
+  padding: clamp(12px, 3vw, 15px) clamp(14px, 4vw, 20px);
+
   border: none;
-  border-radius: 8px;              
+  border-radius: 10px;
   cursor: pointer;
+
+  /* Texto adaptable */
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  text-align: center;
+
+  /* Animación y sombra */
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
- .btn:hover {
-  background: #2f89c5;            
-  transform: translateY(-2px);      
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+/* Hover */
+.btn:hover {
+  background: #2f89c5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
- .btn:active {
-  transform: translateY(1px);       
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+/* Active (click) */
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* 🌟 Contenedor de botones en columna */
 .buttons {
   margin-top: 20px;
   display: flex;
-  gap: 16px;
-  justify-content: center;
+  flex-direction: column; /* 🔹 Botones siempre en columna */
+  gap: 12px;               /* Espacio entre botones */
+  align-items: center;
+  width: 100%;
+  max-width: 300px;        /* Mantiene todo centrado */
+}
+
+/* 📱 Responsive extra para celulares pequeños */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 250px;
+    font-size: 0.9rem;
+    padding: 12px 14px;
+  }
 }
 
