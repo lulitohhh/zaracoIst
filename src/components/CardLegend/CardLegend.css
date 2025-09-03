@@ -32,7 +32,6 @@
 .character-title {
   font-size: 1.8rem; /* Más pequeño */
   margin-bottom: 8px;
-  color: #ff8585;
   font-weight: bold;
 }
 
@@ -98,7 +97,7 @@
   }
 
   .character-title {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .character-img {
