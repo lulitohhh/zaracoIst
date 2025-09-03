@@ -2,60 +2,65 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif; /* Texto principal */
+  font-family: 'Raleway', sans-serif;
   overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
 }
 
+/* Contenedor principal */
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  width: 100vw;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   background: url('/images/fondo.png') no-repeat center center;
-  background-size: cover; /* mantiene proporción */
+  background-size: 100% 100%; /* Imagen SIEMPRE visible, aunque se deforme */
+  background-attachment: fixed; /* Evita espacios en algunos móviles */
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 /* Título */
 .home-title {
-  font-family: 'Oswald', sans-serif; /* Fuente de títulos */
-  font-size: 3.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Se adapta dinámicamente */
   margin-bottom: 15px;
   color: #f7eddd;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Mejora legibilidad */
 }
 
 /* Subtítulo */
 .home-subtitle {
-  font-family: 'Raleway', sans-serif; /* Fuente de texto */
-  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
   margin-bottom: 25px;
   color: #f1f1f1;
-  max-width: 650px;
+  max-width: 90%;
   line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Legible sobre fondo */
 }
 
-/* Responsive */
+/* Media queries */
 @media (max-width: 768px) {
   .home-title {
-    font-size: 2.6rem;
+    margin-bottom: 10px;
   }
 
   .home-subtitle {
-    font-size: 1.2rem;
-    max-width: 90%;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .home-title {
-    font-size: 2rem;
-  }
-
-  .home-subtitle {
-    font-size: 1rem;
+  .home-container {
+    padding: 10px;
   }
 }
