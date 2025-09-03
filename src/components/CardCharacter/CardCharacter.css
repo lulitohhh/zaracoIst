@@ -15,7 +15,6 @@
   justify-content: space-between;
 }
 
-/* Contenido interno con scroll si se excede */
 .Leyenda-card-margin {
   width: 100%;
   height: calc(100% - 24px);
@@ -27,12 +26,13 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* Título */
+
 .leyenda-title {
-  font-size: 1.2rem; /* Más pequeño */
+  font-size: 1.8rem; /* Más pequeño */
   margin-bottom: 8px;
   text-align: center;
   color: #e7b750;
+  font-weight: bold;
 }
 
 /* Imagen */
