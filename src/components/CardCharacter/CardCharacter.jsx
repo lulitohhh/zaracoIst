@@ -22,27 +22,27 @@ const CharacterDetails = ({ personaje }) => {
       <div className="stat-container">
         <p><strong>Puntos de victoria:</strong></p>
         <div className="button-group">
-          <button className="stat-btn" onClick={() => setPuntos((prev) => prev + 1)}>+</button>
-          <p>{puntos}</p> 
           <button className="stat-btn" onClick={() => setPuntos((prev) => Math.max(prev - 1, 0))}>-</button>
+          <p>{puntos}</p> 
+          <button className="stat-btn" onClick={() => setPuntos((prev) => prev + 1)}>+</button>
         </div>
       </div>
 
       <div className="stat-container">
         <p><strong>Vida:</strong></p>
         <div className="button-group">
-          <button className="stat-btn" onClick={() => setVida((prev) => prev + 1)}>+</button>
-          <p>{vida}</p>
           <button className="stat-btn" onClick={() => setVida((prev) => Math.max(prev - 1, 0))}>-</button>
+          <p>{vida}</p>
+          <button className="stat-btn" onClick={() => setVida((prev) => prev + 1)}>+</button>
         </div>
       </div>
 
       <div className="stat-container">
         <p><strong>Ataque:</strong></p>
         <div className="button-group">
-          <button className="stat-btn" onClick={() => setAtaque((prev) => prev + 1)}>+</button>
+         <button className="stat-btn" onClick={() => setAtaque((prev) => Math.max(prev - 1, 0))}>-</button>
           <p>{ataque}</p>
-          <button className="stat-btn" onClick={() => setAtaque((prev) => Math.max(prev - 1, 0))}>-</button>
+           <button className="stat-btn" onClick={() => setAtaque((prev) => prev + 1)}>+</button>
         </div>
       </div>
 
