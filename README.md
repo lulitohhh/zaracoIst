@@ -1,12 +1,66 @@
-# React + Vite
+🌌 Legends of Colombia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Legends of Colombia is a board game combined with a companion web app where players embody characters cursed by mythical Colombian legends.
+Each game session brings unique challenges thanks to randomly generated characters and legends, encouraging strategy, cooperation, and betrayal.
 
-Currently, two official plugins are available:
+🗂 Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project includes:
 
-## Expanding the ESLint configuration
+🎲 Board game rules & assets – physical components like hex tiles, legend cards, and character cards.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 Web app – used to:
+
+Generate random characters and legends at the start of each match.
+
+Manage rerolls (character or legend changes).
+
+Display details for cards and abilities.
+
+🛠 Tech Stack
+
+Routing: React Router
+
+UI/UX: Swiper.js for cards and browsing
+
+Loading Animations: React Spinners
+
+State Management: React Hooks
+
+⚔️ Game Overview
+
+Players: 4–6
+
+Components:
+
+6 Characters
+
+10 Legends
+
+22 Cooperation Cards
+
+38 Modular Tiles (7 hexagons each → 196 total)
+
+2 Dice (Movement & Defense)
+
+🎯 Objective
+
+Be the first to complete your legend’s victory conditions and reach the required points before anyone else.
+Each legend curses a character, providing buffs and debuffs that shape your strategy.
+
+Example:
+The Llorona may increase your attack in rivers but reduce your defense in villages.
+
+🧩 Biomes
+
+The board includes four biome types:
+
+🌳 Forest – boosts certain legends’ powers.
+
+💧 River – ideal for legends like La Llorona.
+
+🏘 Village – opportunities for cooperation or betrayal.
+
+⛰ Valley – open spaces for ambushes.
+
+Moving strategically through biomes can make or break your game plan.
