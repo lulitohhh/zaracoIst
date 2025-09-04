@@ -31,10 +31,9 @@ const CharacterDetails = ({ personaje }) => {
       <div className="stat-container">
         <p><strong>Vida:</strong></p>
         <div className="button-group">
-          <button className="stat-btn" onClick={() => setVida((prev) => Math.max(prev - 1, 0))}>-</button>
-          
-          <p>{vida}</p>
           <button className="stat-btn" onClick={() => setVida((prev) => prev + 1)}>+</button>
+          <p>{vida}</p>
+          <button className="stat-btn" onClick={() => setVida((prev) => Math.max(prev - 1, 0))}>-</button>
         </div>
       </div>
 
