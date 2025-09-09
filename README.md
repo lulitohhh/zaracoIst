@@ -1,6 +1,6 @@
-🌌 Legends of Colombia
+🌌 Zaraco
 
-Legends of Colombia is a board game combined with a companion web app where players embody characters cursed by mythical Colombian legends.
+Zaraco is a board game combined with a companion web app where players embody characters cursed by mythical Colombian legends.
 Each game session brings unique challenges thanks to randomly generated characters and legends, encouraging strategy, cooperation, and betrayal.
 
 🗂 Project Structure
@@ -51,16 +51,4 @@ Each legend curses a character, providing buffs and debuffs that shape your stra
 Example:
 The Llorona may increase your attack in rivers but reduce your defense in villages.
 
-🧩 Biomes
-
-The board includes four biome types:
-
-🌳 Forest – boosts certain legends’ powers.
-
-💧 River – ideal for legends like La Llorona.
-
-🏘 Village – opportunities for cooperation or betrayal.
-
-⛰ Valley – open spaces for ambushes.
-
-Moving strategically through biomes can make or break your game plan.
+Moving strategically across the game board can mean the difference between success and failure in your game plan.
